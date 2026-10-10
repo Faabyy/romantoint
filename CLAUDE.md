@@ -15,7 +15,6 @@ There is no build system, dependency file, linter config, or test suite. Needs P
 ## Code layout
 
 - `main.py` — the whole program, run as a script (no `if __name__ == "__main__"` guard, so importing it executes the prompts). Flow: `getInput()` loops until input passes validation (`isRoman`, uppercase, alpha, length ≤ 15), then `calcInt()` converts and prints. After that, a leftover block reads a number via `to_float()` until non-zero and prints it; this is unrelated to the conversion.
-- `schule.py` — separate scratch file with its own unrelated `to_float`/input loop; not imported by `main.py`.
 
 ## Known state
 
